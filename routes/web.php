@@ -1,5 +1,5 @@
 <?php
-
+use App\Http\Controllers\CarsController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -11,11 +11,13 @@
 |
 */
 
-Route::get('/', function () {
-    $name="Jelena";
-    $age ="28";
-    return view('welcome', compact("name","age"));
+Route::get('/', function(){
+	return view('welcome');
 });
-Route::get('/about', function () {
-    return view('about');
-});
+
+
+Route::get('/cars',['as'=>'all-cars','uses'=> 'CarsController@index']); 
+   
+
+Route::get('/cars{id}',['as'=>'single-car','uses'=> 'CarsController@show']);
+
