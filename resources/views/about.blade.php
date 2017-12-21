@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 @extends('layouts.master')
 @section('title')
-All Cars
+About us
 @endsection
 @section('css')
 @section('content')

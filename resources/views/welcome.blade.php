@@ -10,6 +10,8 @@ All Cars
       <h5>Welcome {{$name}}<h5>
     <p>You are {{$age}} years old<p>
     <a href="{{route('about')}}">About us</a>
+    <p><a href="/cars">All cars</a></p>
+
 @endsection
 
 
