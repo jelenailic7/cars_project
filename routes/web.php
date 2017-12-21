@@ -11,9 +11,16 @@ use App\Http\Controllers\CarsController;
 |
 */
 
-Route::get('/', function(){
-	return view('welcome');
+
+Route::get('/', function () {
+    $name="Jelena Ilic";
+    $age = '28';
+    return view('welcome',compact("name","age"));
+
 });
+Route::get('/about', function () {
+    return view('about');
+})->name('about');
 
 
 Route::get('/cars',['as'=>'all-cars','uses'=> 'CarsController@index']); 

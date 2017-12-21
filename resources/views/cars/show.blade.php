@@ -1,10 +1,10 @@
-<<!DOCTYPE html>
-<html>
-<head>
+<!doctype html>
+@extends('layouts.master')
+@section('title')
+Single Car
+@endsection
 
-</head>
-<body>
+@section('content')
 <h1>{{$car->title}} </h1>
    <p>{{$car->producer}}</p>
-</body>
-</html>
+@endsection
