@@ -10,11 +10,8 @@
   
 </head>
 <body>
-<div class="container">
-<div class="col-md-6">
+<main class="container" role="main">
 @yield('content')
-</div>
-</div>
 </div>
 </body>
 </html>

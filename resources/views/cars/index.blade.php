@@ -7,8 +7,9 @@ All Cars
 @endsection
 @section('content')
 
-<h1>Cars</h1>
-<div class="list-group">
+
+<div class="col-sm-3 blog-sidebar">
+<h4>Cars</h4>
 <ul>
 @foreach($cars as $car)
         <li><a href="{{route('single-car',['id'=>$car->id])}}">{{$car->title}}</a></li>

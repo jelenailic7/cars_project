@@ -6,8 +6,8 @@ All Cars
 @section('css')
 @endsection
 @section('content')
-    <h1>Car project</h1>
-      <h1>Welcome {{$name}}<h1>
+    <h4>Car project</h4>
+      <h5>Welcome {{$name}}<h5>
     <p>You are {{$age}} years old<p>
     <a href="{{route('about')}}">About us</a>
 @endsection
